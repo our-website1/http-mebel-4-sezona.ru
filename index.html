@@ -150,8 +150,15 @@
         /* Наши работы */
         .works {
             text-align: center;
-            background-color: #586457; /* Серый фон для всей секции */
+            background-color: #586457;
             padding: 60px 0;
+            color: white;
+        }
+        
+        .works-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: white;
         }
         
         .gallery-container {
@@ -167,7 +174,7 @@
             overflow: hidden;
             position: relative;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            background-color: #000000; /* Серый фон для рамок с фото */
+            background-color: #ffffff;
         }
         
         .photo-frame img {
@@ -179,43 +186,6 @@
         
         .photo-frame:hover img {
             transform: scale(1.05);
-        }
-        
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-        }
-        
-        /* QR-код секция */
-        .qr-section {
-            background-color: #f9f9f9;
-            text-align: center;
-            padding: 60px 0;
-        }
-        
-        .qr-container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .qr-placeholder {
-            width: 100%;
-            height: 300px;
-            background: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            margin-bottom: 20px;
         }
         
         /* FAQ */
@@ -253,15 +223,8 @@
         }
         
         .accordion-content.active {
-            max-height: 300px;
+            max-height: 500px;
             padding: 20px;
-        }
-        
-        /* CTA секция */
-        .cta {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placeholder.com/1920x600') no-repeat center center/cover;
-            color: white;
-            text-align: center;
         }
         
         /* Футер */
@@ -333,15 +296,15 @@
         </div>
     </header>
 
-   <!-- Герой секция -->
-<section class="hero">
-    <div class="container hero-content">
-        <h1>ИЗГОТОВИМ МЕБЕЛЬ ВАШЕЙ МЕЧТЫ</h1>
-        <a href="#contact" class="btn">РАССЧИТАТЬ КУХНЮ</a>
-        <a href="#contact" class="btn">ЗАКАЗАТЬ ЗАМЕР</a>
-        <a href="#contact" class="btn">УЗНАТЬ О ШКАФЕ</a>
-    </div>
-</section>
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>ИЗГОТОВИМ МЕБЕЛЬ ВАШЕЙ МЕЧТЫ</h1>
+            <a href="#contact" class="btn">РАССЧИТАТЬ КУХНЮ</a>
+            <a href="#contact" class="btn">ЗАКАЗАТЬ ЗАМЕР</a>
+            <a href="#contact" class="btn">УЗНАТЬ О ШКАФЕ</a>
+        </div>
+    </section>
 
     <!-- О нас -->
     <section id="about" class="about">
@@ -386,11 +349,10 @@
                     <h3>5% СКИДКА НОВОСЕЛАМ</h3>
                 </div>
                 <div class="benefit-item">
-                    <h3>мы провереная компания и работаем
-                         с физическими и юредическими лицами с НДС </h3>
+                    <h3>Мы проверенная компания и работаем с физическими и юридическими лицами с НДС</h3>
                 </div>
                 <div class="benefit-item">
-                     <h3>Бесплатный выезд замерщика </h3>
+                    <h3>Бесплатный выезд замерщика</h3>
                 </div>
                 <div class="benefit-item">
                     <h3>Мы создадим ЛУЧШУЮ МЕБЕЛЬ</h3>
@@ -402,46 +364,51 @@
         </div>
     </section>
 
-  <!-- Наши работы -->
-<section id="works" class="works">
-    <div class="container">
-        <h2>Посмотрите наши последние работы</h2>
-        <p class="works-subtitle">Современная кухня, большие комнаты, качественная встроенная мебель, все для вас!</p>
-        
-        <div class="gallery-container">
-            <div class="photo-frame">
-                <img src="img/мебель1.jpg" alt="Современная кухня">
-            </div>
-            <div class="photo-frame">
-                <img src="img/мебель2.jpg" alt="Кухня в классическом стиле">
-            </div>
-            <div class="photo-frame">
-                <img src="img/мебель3.jpg" alt="Угловая кухня с барной стойкой">
-            </div>
-            <div class="photo-frame">
-                <img src="img/мебель4.jpg" alt="Гостиная со встроенной мебелью">
-            </div>
-            <div class="photo-frame">
-                <img src="img/мебель5.jpg" alt="Спальня с гарнитуром">
-            </div>
-            <div class="photo-frame">
-                <img src="img/мебель6.jpg" alt="Прихожая со шкафами-купе">
+    <!-- Наши работы -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2>Посмотрите наши последние работы</h2>
+            <p class="works-subtitle">Современная кухня, большие комнаты, качественная встроенная мебель, все для вас!</p>
+            
+            <div class="gallery-container">
+                <div class="photo-frame">
+                    <img src="img/мебель1.jpg" alt="Современная кухня">
+                </div>
+                <div class="photo-frame">
+                    <img src="img/мебель2.jpg" alt="Кухня в классическом стиле">
+                </div>
+                <div class="photo-frame">
+                    <img src="img/мебель3.jpg" alt="Угловая кухня с барной стойкой">
+                </div>
+                <div class="photo-frame">
+                    <img src="img/мебель4.jpg" alt="Гостиная со встроенной мебелью">
+                </div>
+                <div class="photo-frame">
+                    <img src="img/мебель5.jpg" alt="Спальня с гарнитуром">
+                </div>
+                <div class="photo-frame">
+                    <img src="img/мебель6.jpg" alt="Прихожая со шкафами-купе">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-Мы убедительно рекомендуем вам заказывать кухню и разрабатывать ее дизайн-проект на этапе черновой отделки квартиры или дома.
+    <!-- Секция с QR-кодом УДАЛЕНА -->
 
-Проект кухни должен предусматривать все нюансы, в том числе вывод розеток и электрики, расположение бытовой техники и наличие подсветки.
-
-Продуманный до мелочей дизайн-проект кухни убережет ваши время и нервы, а еще вам не придется доплачивать за переделку ремонта. После того, как мы:
-
-1) Проведем замер помещения,
-2) Согласуем эскиз,
-3) Заключим договор
-
-Наш дизайнер выдаст вам полный список рекомендаций по техническому оснащению вашего помещения, а, значит, воплотить в жизнь запланированный проект кухни будет намного проще и быстрее!</p>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Нас часто спрашивают</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Что нужно знать при заказе кухни? Когда начинать подготовку?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Предоставляем вам полный алгоритм действий: как, что, за чем и зачем?</p>
+                        <p>Мы убедительно рекомендуем вам заказывать кухню и разрабатывать ее дизайн-проект на этапе черновой отделки квартиры или дома.</p>
                     </div>
                 </div>
                 
@@ -451,15 +418,8 @@
                         <span>+</span>
                     </div>
                     <div class="accordion-content">
-                        <p>Да, можно.
-
-Мы ценим ваше время и ресурсы – просто пришлите нам размеры помещения, нарисованный дизайн-проект и оставьте контактные данные для возможности связаться с вами.
-
-Если проекта нет, то отправьте фотографии или картинки понравившегося дизайна, а также размеры помещения – мы создадим проект для вас дистанционно, а также сразу рассчитаем его стоимость!
-
-Если у вас есть возможность, мы рады вам ежедневно и с радостью угостим вас кофе за обсуждением дизайн-проекта.
-
-Если возможности нет, то наш дизайнер с образцами материалов может сам выехать к вам домой и провести консультацию в комфортной для вас домашней атмосфере.</p>
+                        <p>Да, можно.</p>
+                        <p>Мы ценим ваше время и ресурсы – просто пришлите нам размеры помещения, нарисованный дизайн-проект и оставьте контактные данные для возможности связаться с вами.</p>
                     </div>
                 </div>
                 
@@ -469,7 +429,7 @@
                         <span>+</span>
                     </div>
                     <div class="accordion-content">
-                        <p>Все кухонные модули доставляются заказчику собранными, надежно упакованными и максимально готовыми к монтажу. То есть у вас дома не будет сборки, пилорамы и других производственных работ – мы уже все сделали и совсем скоро вы увидите свою новую кухню!.</p>
+                        <p>Все кухонные модули доставляются заказчику собранными, надежно упакованными и максимально готовыми к монтажу.</p>
                     </div>
                 </div>
             </div>
@@ -480,12 +440,11 @@
     <footer id="contact">
         <div class="container footer-content">
             <div class="footer-section">
-                <h3>готовы сделать заказ? ЗВОНИТЕ ПО НОМЕРУ!</h3>
-                <p>Телефон: +8 (922) 784-77-78
-                    (WhatsApp,Telegram,Max)
-                </p>
-                <p>Почта: mebel4sezona@gmail.com </p>
-                <p>Адрес: г.Сургут ПГК островной 37/1</p>
+                <h3>ГОТОВЫ СДЕЛАТЬ ЗАКАЗ? ЗВОНИТЕ ПО НОМЕРУ!</h3>
+                <p>Телефон: +7 (922) 784-77-78</p>
+                <p>(WhatsApp, Telegram, Max)</p>
+                <p>Почта: mebel4sezona@gmail.com</p>
+                <p>Адрес: г. Сургут, ПГК островной 37/1</p>
                 <a href="https://go.2gis.com/e9WYQ" class="btn" target="_blank" style="margin-top: 10px; display: inline-block;">
                     Посмотреть на карте
                 </a>
@@ -493,7 +452,7 @@
             
             <div class="footer-section">
                 <h3>Время работы</h3>
-                <p>ежедневно 9:00-19:00</p>
+                <p>Ежедневно 9:00-19:00</p>
             </div>
         </div>
     </footer>
@@ -532,18 +491,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
